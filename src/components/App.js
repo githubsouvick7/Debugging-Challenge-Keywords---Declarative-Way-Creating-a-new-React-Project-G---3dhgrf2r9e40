@@ -10,7 +10,7 @@ const App = () => {
   return (
     <div className="ball">
       <h1 className="count">{count}</h1>
-      <button className='increment-button' onDoubleClick={ondoubleclick} onClick={onclick}>Increment</button>
+      <button className='increment-button' onDoubleClick=(() => ondoubleclick()) onClick={onclick}>Increment</button>
     </div>
   )
 }
